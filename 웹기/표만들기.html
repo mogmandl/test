@@ -1,0 +1,112 @@
+<!-----------------------
+행은 가로 열은 세로 히히
+행 : row
+열 : column
+셀(행과 열이 만나는 한칸) : cell
+표 : table
+<table>
+    <caption>표제목</caption>
+    <tr>
+        <th>가운데에 굵은 내용</th>
+        <td>내용</th>
+    </tr>    
+</table>
+----------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border = "">
+        <caption>시간표</caption>
+        <thead>  
+            <tr>
+                <th>교시</th>
+                <th>월</th>
+                <th>화</th>
+                <th>수</th>
+                <th>목</th>
+                <th>금</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>자율</td>
+                <td>프밍</td>
+                <td>수학</td>
+                <td rowspan = "2">프밍</td>
+                <td rowspan = "2">웹기</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>사회</td>
+                <td>수학</td>
+                <td>체육</td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td rowspan = "2">웹기</td>
+                <td>국어</td>
+                <td>영어</td>
+                <td>진로</td>
+                <td>체육</td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td>음악</td>
+                <td>과학</td>
+                <td>음악</td>
+                <td>국어</td>
+            </tr>
+            <tr>
+                <th colspan="6">점심시간</th>
+            </tr>
+        </tbody>
+    </table>
+    <img src = '이메지/ryo.png' width="200">
+    <table border = "">
+        <caption>audio, video 태그의 속성</caption>
+        <thead>
+            <tr>
+                <th>종류</th>
+                <th>속성</th>
+            </tr>
+            <tr>
+                <td>controls</td>
+                <td>컨트롤 바 표시</td>
+            </tr>
+            <tr>
+                <td>autoplay</td>
+                <td>자동실행</td>
+            </tr>
+            <tr>
+                <td>loop</td>
+                <td>반복 실행</td>
+            </tr>
+            <tr>
+                <td>muted</td>
+                <td>소리제거</td>
+            </tr>
+            <tr>
+                <td colspan="2">오디오, 소리가 있는 비디오의 자동 재생은 대부분의 웹브라우저에서 금지 되어 있음. muted를 함께 사용. 엣지에서 실행</td>
+            </tr>
+            <tr>
+                <td>width, height</td>
+                <td>너비와 높이 지정</td>
+            </tr>
+            <tr>
+                <td>preload</td>
+                <td>페이지를 불러올때 로딩 방법 지정 (auto, metadata, none, 기본값:auto)</td>
+            </tr>
+            <tr>
+                <td>poster='파일이름'</td>
+                <td>비디오 재생 전까지 화면에 표시될 포스터 이미지</td>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
